@@ -1,0 +1,9 @@
+<!-- This is the header section, common to all pages --> 
+<header> 
+    <a href="{% url 'home' %}">Home</a> | <a href="{% url 'about' %}">About</a> 
+</header> 
+
+<!-- They define a block named 'content', which can be overridden in child 
+templates --> 
+{% block content %} 
+{% endblock content %}

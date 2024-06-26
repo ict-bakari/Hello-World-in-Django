@@ -1,0 +1,14 @@
+<!-- This line indicates that this template extends the 'base.html' template --> 
+{% extends 'base.html' %} 
+ 
+<!-- Here, we override the 'content' block defined in 'base.html' --> 
+{% block content %} 
+  <!-- The content specific to the 'home' page goes here --> 
+  <h1>Hello World, this is my Homepage</h1>
+
+{% for post in all_posts_list %} 
+  <!-- Inside the loop, we are displaying the content of each post. --> 
+  {{ post }} 
+{% endfor %} 
+
+{% endblock content %}
